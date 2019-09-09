@@ -1,0 +1,9 @@
+<launch>
+
+   <node pkg="ROS_Socket" type="yolo.py" name="yolo" output="screen">       
+   </node>
+
+   <node pkg="ROS_Socket" type="stra.py" name="stra" output="screen">       
+   </node>
+
+</launch>

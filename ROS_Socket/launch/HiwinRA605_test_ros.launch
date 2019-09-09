@@ -1,0 +1,4 @@
+<launch>
+    <node name="ros_socket" pkg="ROS_Socket" type="HiwinRA605_socket_ros.py" output="screen"/>
+    <node name="ros_strategy" pkg="ROS_Socket" type="Hiwin_strategy_test.py" output="screen"/>
+</launch>

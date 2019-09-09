@@ -1,0 +1,13 @@
+1.尋找cv2
+	sudo find / -name cv*
+	find this--->/usr/local/lib/python3.5/dist-packages/cv2/cv2.cpython-35m-x86_64-linux-gnu.so
+2.移動至路徑
+	cd /usr/local/lib/python3.5/dist-packages/cv2/
+3.link cv2.so
+	sudo ln -s -b cv2.cpython-35m-x86_64-linux-gnu.so cv2.so
+4.貼上PYTHONPATH
+	sudo vim ~./bashrc
+	
+	貼在最後
+	export ="/usr/local/lib/python3.5/dist-packages/cv2:${PYTHONPATH}"
+

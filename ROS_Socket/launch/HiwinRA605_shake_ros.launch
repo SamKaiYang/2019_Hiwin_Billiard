@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="ROS_Socket" type="yolo.py" name="yolo" output="screen">       
+    </node>
+    <node name="ros_socket" pkg="ROS_Socket" type="HiwinRA605_socket_ros.py" output="screen"/>
+    <node name="ros_strategy" pkg="ROS_Socket" type="Hiwin_Shake_Strategy.py" output="screen"/>
+</launch>

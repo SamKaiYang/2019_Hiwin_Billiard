@@ -1,0 +1,11 @@
+<launch>
+    
+    <node name="ros_rqt" pkg="rqt_reconfigure" type="rqt_reconfigure"/>
+    
+    <node name="ros_socket" pkg="ROS_Socket" type="Hiwin_RT605_Socket.py" output="screen"/>
+
+    <node name="ros_strategy" pkg="ROS_Socket" type="collect_coordination.py" output="screen"/>
+
+    <!-- <node name="ros_draw" pkg="ROS_Socket" type="draw.py" output="screen"/> -->
+
+</launch>

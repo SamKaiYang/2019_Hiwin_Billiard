@@ -1,0 +1,8 @@
+<launch>
+    <node pkg="ROS_Socket" type="yolo.py" name="yolo">
+    </node>
+    <node name="ros_socket" pkg="ROS_Socket" type="HiwinRA605_socket_ros.py" output="screen"/>
+    <node name="ros_strategy" pkg="ROS_Socket" type="Hiwin_Billiards_Strategy.py" output="screen">
+	<rosparam command="load" file="$(find ROS_Socket)/config/data.yaml"/>
+    </node>
+</launch> 
