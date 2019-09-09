@@ -1,0 +1,23 @@
+cd ~/catkin_ws/
+cd ~/Hiwin12_billiard_ws/
+
+source devel/setup.bash 
+
+roslaunch yolo_v3 yolo.launch 
+
+roslaunch pointgrey_camera_driver camera.launch
+
+rqt
+
+==========
+cfg
+==========
+catkin_make
+==========
+
+roslaunch ROS_Socket Hiwin_RT605_Strategy_test.launch 
+
+
+====================================================
+roslaunch ROS_Socket collect_coordination.launch
+====================================================
